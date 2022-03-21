@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CARTA - CORIA</title>
+	<link class="shortcut-icon" rel="shortcut icon" href="..\img\logo.png">
+	<link rel="stylesheet" href="..\css\style.css">
+</head>
+<body>
+	<div class="contenedor__reserva">
+			<header id="div__header" class="botonera">
+				<a href="index.html">
+					<img class="header__logo" src="../img/logo.png" alt="">
+				</a>
+				<div id="header__menuSuperior">
+					<ul>
+						<li><a href="../index.html">Inicio</a></li>
+						<li><a href="delivery.html">Delivery</a></li>
+						<li><a href="carta.html">Carta</a></li>
+						<li><a href="contacto.html">Contacto</a></li>		
+						<li><a href="../index.html#div__comoLlegar">Como llegar</a></li>
+						<li><a href="../index.html#div__nosotros">Nosotros</a></li>
+						<li><a href="reserva.html">Reserva</a></li>				
+					</ul>
+				</div>
+			</header>
+		<main class="reserva">
+		<h2>Hacenos tu reserva</h2>
+		<fieldset class="main__reserva">
+				<legend>Informacion de reserva</legend>
+				<form>
+					<div>
+						<label for="nombre_apellido">Nombre</label>
+						<input type="text" name="nombre_apellido" placeholder="Ingrese su nombre" required>
+					</div>
+					<div>
+						<label for="email">E-mail</label>
+						<input type="email" name="email" placeholder="Ingrese su E-mail" required>
+					</div>
+					<div>
+						<label for="telefono">Telefono/Celular</label>
+						<input type="text" name="telefono" placeholder="Ingrese su telefono/Celular" maxlength="10" required>
+					</div>
+					<div>
+						<label for="fecha-reserva">Dia de reserva</label>
+						<input type="date" required>
+					</div>
+					<div>
+						<label for="hora">Horario de reserva</label>
+						<select name="Hora" required>
+							<option value="">12:00</option>
+							<option value="">12:30</option>
+							<option value="">13:00</option>
+							<option value="">13:30</option>
+							<option value="">20:00</option>
+							<option value="">20:30</option>
+							<option value="">21:00</option>
+							<option value="">21:30</option>
+						</select>
+					</div>
+					<div>
+						<label for="personas">Personas</label>
+						<input type="number" name="personas" placeholder="Cantidad de personas" min="00" max="50" required>
+					</div>
+					<div>
+						<label for="observaciones">Observaciones</label>
+					</div>
+					<div>
+						<textarea name="observaciones" cols="30" rows="10" placeholder="Ingrese alguna observacion/dato"></textarea>
+					</div>
+					<div class="btn">
+						<input type="submit" value="Enviar reserva">
+						<input type="reset" value="Restablecer">
+					</div>
+				</form>
+		</fieldset>	
+	</main>
+	
+
+		<footer id="footer" class="footer__contactos">
+				<h2><a href="contacto.html">Nuestros contactos</a>
+				</h2>
+				<div>
+					<a href="">
+						<img class="footer__logosContactos" src="../img/telefono-logo.png" alt="Logo telefono">
+					</a>
+					<a href="https://www.facebook.com" target="_blanc">
+						<img class="footer__logosContactos" src="../img/logo-facebook.png" alt="Logo facebook">
+					</a>
+					<a href="https://www.twitter.com" target="_blanc">
+						<img class="footer__logosContactos" src="../img/logo-twitter.png" alt="Logo twitter">
+					</a>
+					<a href="" target="_blanc">
+						<img class="footer__logosContactos" src="../img/gmail.logo.png" alt="Logo Gmail">
+					</a>
+					<a href="https://www.instagram.com" target="_blanc">
+						<img class="footer__logosContactos" src="../img/instagram-logo.png" alt="Logo instagram">
+					</a>
+					<a href="" target="_blanc">
+						<img class="footer__logosContactos" src="../img/logo-whatsapp.png" alt="Logo Whatsapp">
+					</a>
+				</div>
+		</footer>
+	</div>
+</body>
+</html>

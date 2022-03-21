@@ -1,0 +1,770 @@
+/*  UNIVERSAL */
+
+* {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/* BODY */
+
+body {
+
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1rem;
+}
+
+
+/*CONTENEDOR GRID*/
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 100vw;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"header" 
+	"carroucel" 
+	"imgReserva" 
+	"nuestroDelivery" 
+	"nuestraCarta"
+	"comoLlegar" 
+	"nosotros" 
+	"footer";
+	grid-row-gap: 10px;
+}
+
+/* HEADER */
+
+#div__header{
+	grid-area: header;
+	position: sticky;
+   	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 1% 0%;
+	text-align: center;
+	background-color: rgba(72, 5, 127, 0.6);
+	box-sizing: border-box;
+}
+
+	.botonera{
+		
+	}
+
+		.botonera a{
+		color: white;
+		text-decoration: none;
+		}
+
+		.botonera h2{
+		color: white;
+		font-size: 2rem;
+		display: inline-block;
+		text-align: center;
+		}
+
+	/* LOGO */
+
+	.header__logo {
+		width: 50%;
+		background-color: rgba(36, 2, 63, 0.8);
+		border-top-right-radius: 15%;
+		border-bottom-left-radius: 15%;
+	}
+
+	/* MENU SUPERIOR */
+
+	#header__menuSuperior ul{
+		margin: 1% 0;
+	}
+
+		#header__menuSuperior ul li{
+			text-decoration: none;
+			display: inline-block;
+			font-size: 1.1rem;
+			padding: 0 5px;		
+		}
+
+		#header__menuSuperior ul li:hover{
+			background-color: #24023f;
+			border-radius: 15%;
+
+		}
+
+/*PUBLICIDAD INTERNA - CARROUCEL*/
+
+#div__carroucel{
+	grid-area: carroucel;
+}
+
+	.contenedor__publicidadInterna h4{
+		text-align: center;
+	}
+
+	.contenedor__publicidadInterna img{
+		width: 30%;
+	}
+
+		.contenedor__publicidadInterna a div{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+/*IMG RESERVA*/
+
+#div__imgReserva{
+	grid-area: imgReserva;
+	width: 100%
+}
+
+	#div__imgReserva a img{
+			width: 100%;
+	}
+
+/* INDEX NUESTRO DELIVERY */
+
+#div__nuestroDelivery{
+	grid-area: nuestroDelivery;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.contenedor__nuestroDelivery{
+		background-color: rgba(255, 187, 253, 0.6);
+		border: rgb(255, 187, 253) solid 2px;
+	}
+
+		.contenedor__nuestroDelivery h2{
+			font-size: 3rem;
+			
+		}
+			.contenedor__nuestroDelivery h2 a{
+				
+				text-decoration: none;
+				color: #000;
+			}
+
+		.contenedor__nuestroDelivery img{
+			width: 100%;
+		}
+
+/*INDEX NUESTRA CARTA*/
+
+#div__nuestraCarta{
+	grid-area: nuestraCarta;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.contenedor__nuestraCarta{
+		background-color: rgba(255, 187, 253, 0.6);
+		border: rgb(255, 187, 253) solid 2px;
+	}
+
+		.contenedor__nuestraCarta h2{
+			font-size: 3rem;
+			
+		}
+			.contenedor__nuestraCarta h2 a{
+				
+				text-decoration: none;
+				color: #000;
+			}
+			
+		.contenedor__nuestraCarta img{
+			width: 100%;
+		}
+
+/*INDEX COMO LLEGAR*/
+
+#div__comoLlegar{
+	grid-area: comoLlegar;
+	margin: 3% 1%;
+	padding: 3% 0;
+	background-color: rgba(255, 187, 253, 0.6);
+	border: rgb(255, 187, 253) solid 2px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	#div__comoLlegar div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#div__comoLlegar iframe {
+		width: 100%;
+	}
+
+	#div__comoLlegar h2{
+		padding-bottom: 3%;
+		font-size: 3rem;
+	}
+
+		#div__comoLlegar div div{
+			margin: 0 1%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+			#div__comoLlegar div h4 {
+				padding: 3% 0;
+				font-size: 2rem;
+			}
+			#div__comoLlegar div div p{
+				font-size: 1.5rem;
+				text-align: center;
+			}
+
+
+/*INDEX NOSOTROS*/
+
+#div__nosotros{
+	grid-area: nosotros;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 3% 1%;
+	padding: 3% 0;
+	background-color: rgba(255, 187, 253, 0.6);
+	border: rgb(255, 187, 253) solid 2px;
+}
+
+	#div__nosotros img{
+		width: 40%;
+	}
+
+	#div__nosotros div h2{
+		margin: 3% 0;
+		font-size: 3rem;
+	}
+
+	#div__nosotros div article p{
+		padding: 3% 0;
+		font-size: 2rem;
+		text-align: center;
+	}
+
+
+/*ASIDE*/
+
+#div__imgPublicidad{
+	grid-area: imgPublicidad;
+	display: none;
+}
+
+/*MENU LATERAL*/
+
+#div__menuLateral{
+	grid-area: menuLateral;
+	display: none;
+}
+
+/* FOOTER */
+
+#footer{
+	grid-area: footer;
+}
+
+	.footer__contactos{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: rgba(72, 5, 127, 1);
+		width: 100%;
+		padding: 2% 0 0 0;
+	}
+
+		.footer__contactos a{
+		text-decoration: none;
+		color: #fff;
+		}
+
+		.footer__contactos h2{
+		color: #fff;
+		font-size: 3rem;
+	 	}
+
+		.footer__logosContactos{
+			width: 100%;
+		}
+
+		.footer__contactos div{
+			display: flex;
+			flex-direction: row;
+			align-content: space-around;
+			width: 80%;
+			margin: 2% 0;
+		}
+
+/* QMEDIA */
+
+@media (min-width: 768px){
+    .contenedor{
+        grid-template-columns: 20vw auto 15vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header header" 
+        "menuLateral carroucel imgPublicidad" 
+        "menuLateral imgReserva imgPublicidad" 
+        "menuLateral nuestroDelivery imgPublicidad" 
+        "menuLateral nuestraCarta imgPublicidad"
+        "comoLlegar comoLlegar comoLlegar" 
+        "nosotros nosotros nosotros" 
+        "footer footer footer";
+        }
+
+     #div__imgPublicidad{
+        display: flex;
+     }  
+
+        #div__imgPublicidad div{
+            display: flex;
+            margin: 0 0.625rem;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+            #div__imgPublicidad div img{
+                width: 100%;
+            }
+
+     #div__menuLateral{
+        background-color: white;
+        color:#676565 ;
+        padding: 10px 30px;
+        font-size: 1.3rem;
+        line-height: 1.6em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        }
+
+        #div__menuLateral form{
+        margin-bottom: 20px;
+        }
+            #div__menuLateral form select{
+                width: 80%;
+            }
+
+    #header__menuSuperior ul li{
+            font-size: 2.5rem;  
+        }
+
+    .footer__contactos div{
+            width: 40%;
+    }
+ }
+
+@media (min-width: 1024px){
+    .contenedor{
+        grid-template-columns: 20vw 30vw 30vw 20vw;
+        grid-template-rows: auto 35vh 12vh 25vh auto auto auto;
+        grid-template-areas: 
+        "header header header header" 
+        "menuLateral carroucel carroucel imgPublicidad" 
+        "menuLateral imgReserva imgReserva imgPublicidad" 
+        "menuLateral nuestroDelivery nuestraCarta imgPublicidad" 
+        "comoLlegar comoLlegar comoLlegar comoLlegar" 
+        "nosotros nosotros nosotros nosotros" 
+        "footer footer footer footer";
+        }
+        .header__logo {
+        width: 20%;
+       }
+
+       #header__menuSuperior ul li{
+            font-size: 2rem;  
+        }
+
+       #div__imgPublicidad div{
+            display: flex;
+            margin: 0 0.625rem;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            #div__imgPublicidad div img{
+                width: 55%;
+            }
+
+       .footer__contactos div{
+            width: 25%;
+        }
+}
+
+
+
+/* RESERVA */
+
+.contenedor__reserva{
+	display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header" 
+    "reserva" 
+    "footer";
+    grid-row-gap: 5vh;
+}
+
+.reserva{
+    grid-area: reserva;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .reserva h2{
+        font-size: 6rem;
+    }
+
+    .main__reserva{
+        background-color: rgba(72, 5, 127, 0.7);
+        font-size: 1.6rem;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #000;
+        width: 100%;
+    }
+        .main__reserva legend{
+            display: none;
+        }
+            .main__reserva form {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 3% 3%;
+            } 
+
+                .main__reserva form div{
+                    padding: 0 2% 3% 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                    .main__reserva form div input{
+                        margin:  3%;
+                    }
+
+@media (min-width: 768px){
+    .main__reserva{
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px){
+    .main__reserva{
+        width: 50%;
+    }
+}
+
+/* CARTA */
+
+
+.carta__contenedor__titulo{
+	text-align: center;
+}
+
+	.carta__contenedor__titulo h1{
+		font-size: 6rem;
+	}
+
+.carta__contenedor__nuestraCarta {
+	width: 90%;
+	text-align: center;
+	margin: 3% 1%;
+	padding: 3% 0;
+	background-color: rgba(255, 187, 253, 0.6);
+	border: rgb(255, 187, 253) solid 2px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+}
+
+.img_prueba{
+	width: 50%;
+}
+
+.contenedor__carta{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+	.contenedor__carta h3{
+		font-size: 3rem;
+		padding-bottom: 3%;
+	}
+
+
+/* DELIVERY */
+
+.contenedor__delivery{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "titulo" 
+    "pastas" 
+    "milanesas" 
+    "compartir" 
+    "parrilla" 
+    "risottos" 
+    "mariscos" 
+    "footer";
+    grid-row-gap: 10px;
+
+}
+
+.delivery__tituloPrincipal{
+    grid-area: titulo;
+    text-align: center;
+}
+
+.delivery__carroucelPastas{
+    grid-area: pastas;
+}
+
+.delivery__carroucelMilanesas{
+    grid-area: milanesas;
+}
+
+.delivery__carroucelCompartir{
+    grid-area: compartir;
+}
+
+.delivery__carroucelParrilla{
+    grid-area: parrilla;
+}
+
+.delivery__carroucelRisottos{
+    grid-area: risottos;
+}
+
+.delivery__carroucelMariscos{
+    grid-area: mariscos;
+}
+    .delivery__carroucel h3{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3vh;
+    }
+
+.img_prueba{
+	width: 32%;
+}
+
+@media (min-width: 768px){
+    .contenedor__delivery{
+        grid-template-columns: 49vw 49vw;
+        grid-template-areas: 
+        "header header" 
+        "titulo titulo" 
+        "pastas milanesas" 
+        "compartir parrilla" 
+        "risottos mariscos" 
+        "footer footer";
+        grid-column-gap: 2vw;
+        grid-row-gap: 6vh;
+    }
+}
+
+@media (min-width: 1024px){
+    .delivery__tituloPrincipal h1{
+        font-size: 6rem;
+    }
+    .delivery__carroucel h3{
+    font-size: 3rem;
+}
+}
+
+/* CARTA */
+
+.contenedor__carta{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "titulo" 
+    "pastas" 
+    "milanesas" 
+    "compartir" 
+    "parrilla" 
+    "risottos" 
+    "mariscos" 
+    "footer";
+    grid-row-gap: 10px;
+
+}
+
+.carta__tituloPrincipal{
+    grid-area: titulo;
+    text-align: center;
+}
+
+.carta__carroucelPastas{
+    grid-area: pastas;
+}
+
+.carta__carroucelMilanesas{
+    grid-area: milanesas;
+}
+
+.carta__carroucelCompartir{
+    grid-area: compartir;
+}
+
+.carta__carroucelParrilla{
+    grid-area: parrilla;
+}
+
+.carta__carroucelRisottos{
+    grid-area: risottos;
+}
+
+.carta__carroucelMariscos{
+    grid-area: mariscos;
+}
+    .carta__carroucel h3{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3vh;
+    }
+
+.img_prueba{
+    width: 32%;
+}
+
+@media (min-width: 768px){
+    .contenedor__carta{
+        grid-template-columns: 49vw 49vw;
+        grid-template-areas: 
+        "header header" 
+        "titulo titulo" 
+        "pastas milanesas" 
+        "compartir parrilla" 
+        "risottos mariscos" 
+        "footer footer";
+        grid-column-gap: 2vw;
+        grid-row-gap: 6vh;
+    }
+}
+
+@media (min-width: 1024px){
+    .carta__tituloPrincipal h1{
+        font-size: 6rem;
+    }
+    .carta__carroucel h3{
+    font-size: 3rem;
+}
+}
+
+/*CONTACTO*/
+
+.contenedor__contactos {
+		display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header" 
+        "titulo" 
+        "telefono" 
+        "facebook" 
+        "twitter" 
+        "gmail" 
+        "instagram" 
+        "wpp" 
+        "footer";
+}
+
+.contactos__tituloPrincipal{
+    grid-area: titulo;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+    .contactos__tituloPrincipal h2{
+        font-size: 4rem;
+    }
+
+.contactos__logoTelefono{
+    grid-area: telefono;
+
+}
+
+.contactos__logoFacebook{
+    grid-area: facebook;
+}
+
+.contactos__logoTwitter{
+    grid-area: twitter;
+}
+
+.contactos__logoGmail{
+    grid-area: gmail;
+}
+
+.contactos__logoInstagram{
+    grid-area: instagram;
+}
+
+.contactos__logoWhatsapp{
+    grid-area: wpp;
+}
+
+.main__logosContactos{
+    width: 25%;
+}
+
+.contactos{
+    display: grid;
+    grid-template-columns: 100vw;
+    text-align: center;
+    grid-row-gap: 5vh;
+    margin-bottom: 5vh;
+}
+
+@media (min-width: 768px) {
+
+    .contactos p{
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .main__logosContactos{
+        width: 10%;
+    }
+   
+}
